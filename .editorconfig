@@ -1,0 +1,20 @@
+root = true
+
+[src/**/*.ts]
+indent_style = tab
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = false
+end_of_line = lf
+max_line_length = off
+
+[CHANGELOG.md]
+indent_size = false
+
+[bin/**/*.js]
+indent_size = 2
+indent_style = space
+
+[{package.json,pnpm-lock.yaml,yarn.lock,package-lock.json}]
+indent_size = 2
+indent_style = space
