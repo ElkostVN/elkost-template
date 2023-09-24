@@ -1,13 +1,15 @@
 {
     "env": {
         "node": true,
-        "es2022": true
+        "es2024": true
     },
     "root": true,
     "extends": [
         "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:perfectionist/recommended-line-length"
+        "plugin:sonarjs/recommended",
+        "plugin:promise/recommended",
+        "plugin:optimize-regex/recommended",
+        "plugin:@typescript-eslint/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -20,10 +22,16 @@
         "SharedArrayBuffer": "readonly"
     },
     "plugins": [
+        "sonarjs",
+        "promise",
+        "optimize-regex",
         "@typescript-eslint",
-        "perfectionist"
+        "simple-import-sort"
     ],
     "rules": {
+        "optimize-regex/optimize-regex": "warn",
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
         "@typescript-eslint/no-extra-semi": "error",
         "@typescript-eslint/no-unused-vars": [
             "warn",
@@ -201,7 +209,7 @@
         ],
         "semi": [
             "error",
-            "never"
+            "always"
         ],
         "no-await-in-loop": [
             "error"
@@ -260,7 +268,7 @@
             "error"
         ],
         "dot-notation": [
-            "error"
+            "off"
         ],
         "eqeqeq": [
             "error",

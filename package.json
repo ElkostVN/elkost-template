@@ -1,23 +1,33 @@
 {
   "name": "@elkost-template",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "",
   "main": "bin/index.js",
-  "scripts": {},
-  "keywords": [],
+  "scripts": {
+    "start": "node bin/index.js",
+    "develop": "nodemon bin/index.js",
+    "build": "tsc --build --clean && tsc --build",
+    "build:develop": "tsc --watch"
+  },
   "author": {
     "email": "k.r.ilyin@gmail.com",
     "name": "Elkost"
   },
   "license": "ISC",
   "type": "module",
+  "imports": {
+    "#src/*": "./bin/*"
+  },
   "devDependencies": {
-    "@types/node": "^20.5.3",
-    "@typescript-eslint/eslint-plugin": "^6.4.1",
-    "@typescript-eslint/parser": "^6.4.1",
-    "eslint": "^8.47.0",
-    "eslint-plugin-perfectionist": "^1.5.1",
+    "@types/node": "^20.6.5",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "eslint": "^8.50.0",
+    "eslint-plugin-optimize-regex": "^1.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-sonarjs": "^0.21.0",
     "nodemon": "^3.0.1",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
   }
 }
