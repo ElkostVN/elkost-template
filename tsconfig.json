@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
         "baseUrl": ".",
-		"target": "ESNext", /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+		"target": "ES2022", /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
 		"module": "NodeNext", /* Specify what module code is generated. */
 		"moduleResolution": "NodeNext", /* Specify how TypeScript looks up a file from a given module specifier. */
 		"resolveJsonModule": true, /* Enable importing .json files. */
@@ -24,8 +24,8 @@
 		"strictPropertyInitialization": true, /* Check for class properties that are declared but not set in the constructor. */
         "noPropertyAccessFromIndexSignature": true,
         
-		"emitDecoratorMetadata": true, /* Emit design-type metadata for decorated declarations in source files. */
-        "experimentalDecorators": true, /* Enable experimental support for TC39 stage 2 draft decorators. */
+		"emitDecoratorMetadata": false, /* Emit design-type metadata for decorated declarations in source files. */
+        "experimentalDecorators": false, /* Enable experimental support for TC39 stage 2 draft decorators. */
 		"useDefineForClassFields": true, /* Emit ECMAScript-standard-compliant class fields. */
 		
 		"skipLibCheck": true, /* Skip type checking all .d.ts files. */
