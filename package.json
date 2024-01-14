@@ -24,15 +24,15 @@
     "#src/*": "./bin/*"
   },
   "devDependencies": {
-    "@types/node": "^20.8.9",
-    "@typescript-eslint/eslint-plugin": "^6.9.0",
-    "@typescript-eslint/parser": "^6.9.0",
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/parser": "^6.18.1",
     "concurrently": "^8.2.2",
-    "eslint": "^8.52.0",
+    "eslint": "^8.56.0",
     "eslint-plugin-optimize-regex": "^1.2.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-sonarjs": "^0.21.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.3"
   }
 }
