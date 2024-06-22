@@ -1,7 +1,8 @@
 node_modules
-bin
 
-.env
+bin
+*.env
+!*.env.example
 
 .vscode/*
 !.vscode/extensions.json
