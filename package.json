@@ -1,6 +1,6 @@
 {
   "name": "@elkost/template",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "main": "bin/index.js",
   "scripts": {
     "lint": "eslint --ext .ts src/",
